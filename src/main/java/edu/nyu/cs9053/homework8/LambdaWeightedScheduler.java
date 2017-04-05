@@ -31,7 +31,6 @@ public class LambdaWeightedScheduler {
             for(int j = 0; j < i; j++) {
                 if(jobs.get(j).getEnd() <= jobs.get(i).getStart()){ //not overlap
                     profit[i] = Math.max(profit[i], jobs.get(i).getWeight() + profit[j]);
-                    
                 }
             }
         }
