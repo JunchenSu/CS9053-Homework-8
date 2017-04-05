@@ -16,7 +16,7 @@ public class LambdaWeightedScheduler {
      * @param jobs
      * @return
      */
-    public int maximum(List<Job> jobs){
+    public static int maximum(List<Job> jobs){
         int profit[] = new int[jobs.size()];
         if (jobs == null || jobs.size() == 0) return 0;
         Collections.sort(jobs, new Comparator<Job>() {
